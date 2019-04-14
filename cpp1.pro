@@ -29,7 +29,8 @@ SOURCES += \
     BaseRequest.cpp \
     Person.cpp \
     Robot.cpp \
-    Factory.cpp
+    Factory.cpp \
+    PasswordLineEdit.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -38,7 +39,8 @@ HEADERS += \
     BaseRequest.h \
     Person.h \
     Robot.h \
-    Factory.h
+    Factory.h \
+    PasswordLineEdit.h
 
 FORMS += \
         mainwindow.ui
@@ -47,3 +49,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    r.qrc

@@ -10,3 +10,15 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_pushButton_2_toggled(bool checked)
+{
+    if (checked)
+    {
+        ui->lineEdit->setEchoMode(QLineEdit::EchoMode::Normal);
+    }
+    else
+    {
+        ui->lineEdit->setEchoMode(QLineEdit::EchoMode::Password);
+    }
+}

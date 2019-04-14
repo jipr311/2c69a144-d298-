@@ -10,6 +10,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    MainWindow m;
+    m.show();
     {
         nlohmann::json j = "{ \"robot\": {\"modelName\": \"iiwa\"}, \"point\": {\"x\": 17, \"y\": 17} }"_json;
         qDebug() << "j: " << j.dump().c_str();
